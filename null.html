@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	// null is printable by alert
+	var v = null;
+	window.alert(v);
+	</script>
+
+	<script>
+	// un-assigned variable is undefined
+	function testFun(v) {
+		if(typeof v === 'undefined')
+			document.getElementById("testFun").innerHTML = "un-assigned variable is undefined";
+		else
+			window.alert(v);
+	}
+	</script>
+</head>
+<body>
+	<div id="testFun"></div>
+	<script>
+	testFun();
+	</script>
+</body>
+</html>
